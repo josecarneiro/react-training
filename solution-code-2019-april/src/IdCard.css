@@ -1,8 +1,0 @@
-.IdCard {
-  border: 2px solid black;
-  display: flex;
-}
-
-.IdCard > div {
-  margin: 5px;
-}
