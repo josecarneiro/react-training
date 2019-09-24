@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import IdCard from "./components/IdCard";
+import Greetings from "./components/Greetings";
 
 class App extends Component {
   render() {
@@ -16,7 +17,8 @@ class App extends Component {
           picture="https://g8fip1kplyr33r3krz5b97d1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/Influence.png"
         />
         <h1>Greetings</h1>
-        {/* TODO: Use the Greetings component */}
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
       </div>
     );
   }
