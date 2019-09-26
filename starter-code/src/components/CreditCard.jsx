@@ -10,21 +10,23 @@ export default function CreditCard(props) {
     backgroundColor: `${props.bgColor}`,
     color: `${props.color}`,
     height: "200px"
-    // width: "50%"
   };
-
+  const srcImage =
+    `${props.type}` === "Visa" ? "/img/visa.png" : "/img/master-card.svg";
   return (
     <Row>
       <Col xs={6} md={4}>
         <Card style={cardStyle} rounded>
-          {/* <img
-              src="https://randomuser.me/api/portraits/women/44.jpg"
-              width="1px"
-            /> */}
+          <img
+            src={srcImage}
+            style={{ marginTop: "20px", marginLeft: "230px" }}
+            width="23%"
+            height="30px"
+          />
           <Card.Body>
             <Card.Text
               className="text-center"
-              style={{ marginTop: "40px", fontSize: "1.5em" }}
+              style={{ marginTop: "10px", fontSize: "1.5em" }}
             >
               •••• •••• •••• {props.number.substr(12)}
             </Card.Text>

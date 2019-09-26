@@ -33,7 +33,6 @@ class App extends Component {
         <h1>Random</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
-        <img src="./components/visa.png" />
         <h1>Credit Card</h1>
         <CreditCard
           type="Visa"
