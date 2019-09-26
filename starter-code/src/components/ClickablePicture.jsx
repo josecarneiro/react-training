@@ -18,6 +18,6 @@ export default class ClickablePicture extends Component {
   }
 
   render() {
-    return <img src={this.state.whichImage} onClick={this.clicked} />;
+    return <img src={this.state.whichImage} onClick={this.clicked} alt="" />;
   }
 }
