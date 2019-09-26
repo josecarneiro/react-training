@@ -6,6 +6,7 @@ import BoxColor from "./components/BoxColor";
 import CreditCard from "./components/CreditCard";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
+import LikeButton from "./components/LikeButton";
 
 class App extends Component {
   render() {
@@ -20,7 +21,6 @@ class App extends Component {
           birth="1992-07-14"
           picture="https://randomuser.me/api/portraits/men/44.jpg"
         />
-
         <IdCard
           lastName="Delores "
           firstName="Obrien"
@@ -95,6 +95,8 @@ class App extends Component {
             licensePlate: "BE33ER"
           }}
         />
+        <h1>Like Button</h1>
+        <LikeButton /> <LikeButton />
       </div>
     );
   }
