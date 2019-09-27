@@ -12,3 +12,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.cardImg img {
+  margin-top: "20px";
+  margin-left: "230px";
+  width: "23%";
+  height: "30px";
+}
