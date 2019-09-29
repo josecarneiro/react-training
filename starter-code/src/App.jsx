@@ -10,6 +10,8 @@ import BoxColor from "./components/BoxColor";
 import Rating from "./components/Rating";
 import DriverCard from "./components/DriverCard";
 import ClickablePicture from "./components/ClickablePicture";
+import Dice from "./components/Dice";
+import NumbersTable from "./components/NumbersTable";
 
 class App extends Component {
   render() {
@@ -32,19 +34,23 @@ class App extends Component {
           birth="1988-05-11"
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
+        <br />
         <h1>Greetings</h1>
         <Greetings lang="geez">ቅድስት</Greetings>
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
+        <br />
         <h1>Random</h1>
         <Random min={1} max={6} />
         <Random min={1} max={100} />
+        <br />
         <h1> BoxColor</h1>
         <BoxColor r={255} g={0} b={0} />
         <br />
         <BoxColor r={128} g={255} b={0} />
-        <h1>Credit Card</h1>
+        <br />
 
+        <h1>Credit Card</h1>
         <Row>
           <CreditCard
             type="Visa"
@@ -78,6 +84,7 @@ class App extends Component {
             color="white"
           />
         </Row>
+        <br />
         <h1>Rating</h1>
         <Rating>0</Rating>
         <Rating>1.49</Rating>
@@ -85,6 +92,7 @@ class App extends Component {
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
+        <br />
 
         <h1>Like Buttons</h1>
         <LikeButton />
@@ -109,11 +117,20 @@ class App extends Component {
             licensePlate: "BE33ER"
           }}
         />
+        <br />
         <h1>Clickable Picture</h1>
         <ClickablePicture
           img="/img/persons/maxence.png"
           imgClicked="/img/persons/maxence-glasses.png"
         />
+        <br />
+        <h1>Dice</h1>
+        <Dice />
+        <br />
+        <h1>Number's Table</h1>
+        <NumbersTable limit={12} />
+        <br />
+        <br />
       </Container>
     );
   }
